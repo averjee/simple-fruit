@@ -1,0 +1,42 @@
+
+$purple-color: rgb(114, 0, 255);
+
+mat-grid-tile {
+    top: 20px !important;
+}
+
+#price, #description {
+    text-align: left;
+    width: 225px;
+    margin-left: -22px;
+}
+
+#price {
+    color: $purple-color;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+img, mat-card-title, .btn:hover {
+    cursor: pointer;
+}
+
+.btn-outline-danger {
+    color: $purple-color;
+    border-color: $purple-color;
+}
+
+#sort-price:hover, #sort-alpha:hover {
+    color: white;
+    background-color: $purple-color;
+}
+
+#sort-container {
+    margin-left: 728px;
+    margin-top: 20px;
+}
+
+#sort-alpha {
+    margin-left: 20px;
+}
+

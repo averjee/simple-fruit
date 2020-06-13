@@ -1,0 +1,55 @@
+
+$purple-color: rgb(114, 0, 255);
+
+mat-grid-list {
+    top: 50px;
+    width: 100% !important;
+    left: 220px !important;
+}
+
+#title {
+    margin-top: -20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#price {
+    font-size: 28px;
+    color: $purple-color;
+}
+
+#details {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#details:hover {
+    cursor: pointer;
+}
+
+.btn {
+    margin-left: -15px;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.btn-outline-danger {
+    color: $purple-color;
+    border-color: $purple-color;
+}
+
+.btn-outline-danger:hover {
+    color: white;
+    background-color: $purple-color;
+}
+
+.buy {
+    color: $purple-color;
+    font-size: 27px;
+    float: left;
+    margin-top: -51px;
+    margin-left: -10px;
+    width: 200px;
+}

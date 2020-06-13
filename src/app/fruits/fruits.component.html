@@ -1,0 +1,26 @@
+
+<app-header></app-header>
+
+<mat-grid-list class="center" cols="3" rowHeight="600px"  gutterSize='0px'>
+  <div id="sort-container">
+    <button id="sort-price" (click)="toggleSortPrice()" type="button" class="btn btn-outline-danger">Sort by price</button>
+    <button id="sort-alpha" (click)="toggleSortAlpha()" type="button" class="btn btn-outline-danger">Sort A-Z</button>
+  </div>
+  <ul *ngIf="fruits">
+    <li *ngFor="let fruit of fruits"> 
+        <mat-grid-tile>
+            <mat-card class="example-card">
+                <img mat-card-image src="assets/{{fruit.filename}}.jpg" (click)="fruitSelected(fruit)">
+                <mat-card-actions class="center">
+                    <mat-card-title (click)="fruitSelected(fruit)">{{ fruit.title }}</mat-card-title>
+                    <div id="description">{{ fruit.description | slice:0:56 }}</div>
+                    <div id="price">£{{ fruit.price }}</div>
+                    <button id="details" class="center" (click)="addToBasket(fruit.price)" mat-raised-button><img mat-card-image src="assets/shopping-basket.svg"></button>
+                </mat-card-actions>
+              </mat-card>
+        </mat-grid-tile>
+    </li>
+  </ul>
+</mat-grid-list>
+
+

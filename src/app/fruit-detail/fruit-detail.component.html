@@ -1,0 +1,26 @@
+
+<app-header></app-header>
+<br>
+
+<mat-grid-list cols="2" rowHeight="600px"  gutterSize='0px'>
+    <button (click)="goBack()" type="button" class="btn btn-outline-danger">
+        Back To Fruits
+    </button>
+    <div class="row">
+
+        <div class="col-md-5">
+            <img mat-card-image src="assets/{{fruit.filename}}.jpg">
+        </div>
+
+
+        <div class="col-md-7">
+            <div id="title">{{ fruit.title }}</div>
+            <div id="price">£{{ fruit.price }}</div>
+            <button id="details" class="center" (click)="addToBasket(fruit.price)" mat-raised-button><img mat-card-image src="assets/shopping-basket.svg"><span class="buy">Buy Now</span></button>
+            <hr>
+            <p class="text-justify">
+                {{ fruit.description }}
+            </p>
+        </div>
+    </div>
+</mat-grid-list>
