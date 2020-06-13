@@ -2,7 +2,7 @@ import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 const puppeteer = require('puppeteer');
 
-describe('workspace-project App', async () => {
+describe('Simple Fruit Unit Tests', async () => {
   let page: AppPage;
 
   beforeEach(() => {
