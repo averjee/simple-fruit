@@ -1,5 +1,5 @@
 
-# Innovation Group Technical Challenge Overview
+# Innovation Group Technical Challenge
 
 This project was developed in Angular and styled using both Angular Material as well as Bootstrap.
 
